@@ -9,13 +9,13 @@ int main() {
 
 	int i;
 	for(i=0; i<4; i++){
-		hdlr1[i](a, b);
+		fn_hdlr1(hdlr1[i], a, b);
 	}
 
 	int j;
 	for(j=0; j<2; j++){
-		hdlr2[j](a);
-		hdlr2[j](b);
+		fn_hdlr2(hdlr2[j], a);
+		fn_hdlr2(hdlr2[j], b);
 	}
 
 	return 0;

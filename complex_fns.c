@@ -61,8 +61,8 @@ void fn_hdlr1(Complex (*hdlr1)(Complex, Complex), Complex c1, Complex c2){
        return;
 }
 
-void fn_hdlr2(Complex (*hdlr2)(Complex, Complex), Complex c1, Complex c2){
-       printf("%1f", hdlr2(c2));
+void fn_hdlr2(double (*hdlr2)(Complex), Complex c2){
+       printf("%1f\n", hdlr2(c2));
        return;
 }
 
